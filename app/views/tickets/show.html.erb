@@ -1,0 +1,7 @@
+<h1>Your ticket was created 🎉</h1>
+
+<p><%= @ticket.teacher.name %> will come help with your problem:</p>
+
+<blockquote><%= @ticket.description %></blockquote>
+
+<%= link_to "Make another ticket", teachers_path %>
