@@ -1,5 +1,5 @@
 puts "Deleting current database entries..."
-Teacher.destroy_all
+# Teacher.destroy_all
 User.destroy_all
 
 puts "Creating users"
