@@ -1,0 +1,5 @@
+As a user,....
+
+1. I can see a list of all the teachers
+2. I can see the details for one teacher
+3. I can make a ticket with a teacher

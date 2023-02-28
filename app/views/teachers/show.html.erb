@@ -1,0 +1,14 @@
+<h1>Hi, my name is <%= @teacher.name %></h1>
+
+<p>I'm super experienced: <%= @teacher.experience %>.</p>
+
+<p>My superpower is <%= @teacher.superpower %>.</p>
+
+<p>I'm currently teaching for batch #<%= @teacher.batch_number %>.</p>
+
+<%= link_to "Make a ticket with #{@teacher.name}",
+    new_teacher_ticket_path(@teacher),
+    class: "btn btn-primary"
+%>
+
+<p><%= link_to "Go back", teachers_path %></p>
