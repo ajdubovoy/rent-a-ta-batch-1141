@@ -1,4 +1,8 @@
 class TicketsController < ApplicationController
+  def show
+    @ticket = Ticket.find(params[:id])
+  end
+
   def new
     @teacher = Teacher.find(params[:teacher_id])
     @ticket = Ticket.new
@@ -11,7 +15,7 @@ class TicketsController < ApplicationController
     @ticket.teacher = @teacher
 
     if @ticket.save
-      redirect_to teachers_path
+      redirect_to ticket_path(@ticket)
     else
       render :new
     end
